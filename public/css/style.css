@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+::-webkit-scrollbar{
+    display: none;
+}
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    overflow: hidden;
+}
+header{
+    position: relative;
+    background-color: chocolate;
+    color: white;
+    padding: 7px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+img{
+    width: 2vw;
+}
+.container{
+    position: relative;
+    background-color: lightgray;
+    padding: 20px;
+    display: flex;
+}
+.user-window{
+    width: 30vw;
+    color: white;
+    background-color: rgb(9, 9, 9);
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.user-head{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.user-head > h4{
+    border-radius: 50%;
+    padding: 0 8px;
+    background-color: cadetblue;
+}
+.users-list>p{
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+
+.chat-window{
+    width: 100%;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+.chats{
+    height: 65vh;
+    padding: 20px;
+    overflow-y: auto;
+}
+.user-join{
+    color: darkgrey;
+    background-color: white;
+    border-radius: 50px;
+    width: max-content;
+    padding: 7px 20px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.message{
+    color: darkgrey;
+    background-color: white;
+    padding: 5px 15px;
+    max-width: 400px;
+    margin-bottom: 15px;
+    border-radius: 10px 50px 50px 10px ;
+}
+.message > p{
+    font-size: 2vw;
+}
+.outgoing{
+    margin-left: auto;
+    color: white;
+    background-color: rgb(114, 170, 189);
+    border-radius: 50px 10px 10px 50px;
+}
+.user-input{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+input{
+    background-color: white;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 50px 0 0 50px;
+}
+button{
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    letter-spacing: 0.5px;
+    color: white;
+    background-color: rgb(49, 130, 158);
+    border-radius: 0px 50px 50px 0px ;
+}
+@media screen and (max-width: 800px){
+    .user-window{
+        display: none;
+    }
+    button{
+        font-size: 3vw;
+    }
+}
